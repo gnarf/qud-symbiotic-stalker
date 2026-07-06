@@ -1,0 +1,22 @@
+<objects Encoding="utf-8">
+    <object Name="Gnarf_Symbiotic_Stalker" Inherits="BaseArmlet">
+		<part Name="Armor" WornOn="Arm" AV="0" DV="-2" Strength="-1" Toughness="-2" Agility="-1" Ego="-1" Willpower="-1" Intelligence="-1" />
+        <part Name="Render"  /> 
+        <part Name="Physics" Weight="5" />
+        <part Name="Commerce" Value="10" />
+        <part Name="Render" DisplayName="symbiotic stalker" Tile="gnarf_sym_stalker.png" DetailColor="m" TileColor="&amp;w" />
+        <part Name="Description" Short="Nimble stalks emerge from a mycelial network which has coalesced into the shape of a sleeve. They gesticulate sympathetically, begging for mutual integration." />
+        <part Name="Cursed" RevealInDescription="true" />
+        <part Name="AddsRep" Faction="Fungi:300,Consortium:-300" />
+		<part Name="ArmsOnEquip" BaseHands="Lateral Hyphae" BaseArm="Stalk" BaseHand="Hypha" Category="Fungal" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+    </object>
+    <!-- hits the puffers and the cherubs and pax -->
+    <object Name="MutatedFungus" Load="Merge">
+        <part Name="Harvestable" OnSuccess="Gnarf_Symbiotic_Stalker" StartRipeChance="1:50" />
+    </object>
+    <!-- hits the fungi that are SUPER common on fungal screens, hence even 1:2500 is pretty common -->
+    <object Name="SolidFungus" Load="Merge">
+        <part Name="Harvestable" OnSuccess="Gnarf_Symbiotic_Stalker" StartRipeChance="1:2500" />
+    </object>
+</objects>
