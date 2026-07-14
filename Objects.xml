@@ -1,7 +1,6 @@
 <objects Encoding="utf-8">
     <object Name="Gnarf_Symbiotic_Stalker" Inherits="BaseArmlet">
 		<part Name="Armor" WornOn="Arm" AV="0" DV="-2" Strength="-1" Toughness="-2" Agility="-1" Ego="-1" Willpower="-1" Intelligence="-1" />
-        <part Name="Render"  /> 
         <part Name="Physics" Weight="5" />
         <part Name="Commerce" Value="10" />
         <part Name="Render" DisplayName="symbiotic stalker" Tile="gnarf_sym_stalker.png" DetailColor="m" TileColor="&amp;w" />
